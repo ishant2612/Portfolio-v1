@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import About from "./Components/About";
+import Header from "./Components/Header";
+import Hero from "./Components/Hero";
+import Projects from "./Components/Projects";
+import { useState, useEffect } from "react";
+import Skills from "./Components/Skills";
 function App() {
+  const [scrollPos, setScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPos(window.pageYOffset);
+    };
+    console.log("====================================");
+    console.log(scrollPos);
+    console.log("====================================");
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header scrollPos={scrollPos} />
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
     </div>
   );
 }

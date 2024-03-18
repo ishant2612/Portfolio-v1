@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+.missions {
+  margin-top: 40vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0f0f0f;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.project-sec {
+  height: 90%;
+  width: 90%;
+  /* padding: 10vh 0; */
+  /* background-color: red; */
+  /* color: white; */
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.projects {
+  height: 100%;
+  width: 90%;
+  border-radius: 1.6875rem;
+  /* position: relative; */
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tilted-head {
+  position: absolute;
+  left: -5vw;
+  color: white;
+  top: 16.3vh;
+  background-color: #b52431;
+  font-size: 4rem;
+  /* height: 4vh; */
+  width: 20vw;
+  font-family: "Squada One", sans-serif;
+  /* padding: 1vh 1vw; */
+  border-radius: 1.5rem;
+  text-align: center;
+  transform: rotate(-90deg);
+  /* z-index: 1; */
+}
+
+.display-sec {
+  width: 95%;
+  height: 85%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vh 1vw;
+}
+
+.row1,
+.row2,
+.row3 {
+  height: 95%;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vh;
+  /* background-color: blue; */
+}
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6 {
+  width: 95%;
+  height: 50%;
+  background-color: #b0b0b0;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 250ms;
+  padding: 0.4vh 0.2vw 5vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.p1:hover,
+.p2:hover,
+.p3:hover,
+.p4:hover,
+.p5:hover,
+.p6:hover {
+  height: 100%;
+  background-color: #b52431;
+  color: white;
+  -webkit-box-shadow: -1px 3px 35px -3px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: -1px 3px 35px -3px rgba(0, 0, 0, 0.78);
+  box-shadow: -1px 3px 35px -3px rgba(0, 0, 0, 0.78);
+}
+
+.explore {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  cursor: pointer;
+  justify-content: flex-end;
+  gap: 0.7vw;
+
+  & p {
+    font-family: "slimjoe";
+    font-size: 2.1875rem;
+  }
+  & ArrowCircleRightIcon {
+    font-size: 2.1875rem;
+  }
+}
+.imgp {
+  height: 20vh;
+  width: 100%;
+
+  border-radius: 20px;
+  /* background-color: #b52431; */
+  transition: all 250ms;
+  padding: 1vh 1vh;
+  overflow: hidden;
+}
+
+.imgp img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: contain;
+  transition: all 250ms;
+  object-position: center;
+}
+
+.p1:hover img,
+.p2:hover img,
+.p3:hover img,
+.p4:hover img,
+.p5:hover img,
+.p6:hover img {
+  object-fit: cover;
+}
+
+.p1:hover .p_desc,
+.p2:hover .p_desc,
+.p3:hover .p_desc,
+.p4:hover .p_desc,
+.p5:hover .p_desc,
+.p6:hover .p_desc {
+  visibility: visible;
+  opacity: 1;
+}
+
+.p_desc {
+  visibility: hidden;
+  width: 80%;
+  text-align: center;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}

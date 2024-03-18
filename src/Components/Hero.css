@@ -1,0 +1,92 @@
+.hero {
+  color: white;
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  background: url("../res/bg.png") center/cover no-repeat;
+  padding-top: 20vh;
+  /* position: relative;     */
+  z-index: -10;
+}
+
+.herocon {
+  width: 50%;
+  margin-left: 5vw;
+  text-align: start;
+}
+.para {
+  font-family: "slimjoe";
+  font-size: 4.765rem;
+  width: 50%;
+  font-weight: 400;
+
+  span {
+    color: #b52431;
+  }
+}
+.smallpara {
+  font-family: "Square BT";
+  letter-spacing: 0.04vw;
+  margin-top: 0.6vh;
+  margin-left: 0.4vw;
+  font-weight: 400;
+}
+
+.herocon > button {
+  padding: 1.6vh 1.5vw;
+  border-radius: 20px;
+  /* border: none; */
+  border: 1px solid #b52431;
+  background-color: #b52431;
+  color: #0f0f0f;
+  font-family: "Squada One", sans-serif;
+  font-size: 2.5vh;
+  transition: all 250ms;
+  cursor: pointer;
+  margin-top: 5vh;
+  &:hover {
+    background-color: transparent;
+    color: #b52431;
+    border: 1px solid #b52431;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .hero {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+  }
+  .herocon {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    margin-left: -1.3vw;
+    /* background-color: #b52431; */
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .para {
+    /* background-color: blue; */
+    width: 100%;
+    margin-left: -2.3vw;
+    font-size: 6.5vh;
+    text-align: center;
+    /* margin-bottom: 5vh; */
+    & span {
+      font-weight: 800;
+    }
+  }
+  .smallpara {
+    text-align: center;
+    width: 100%;
+    opacity: 0.6;
+    font-size: 1vh;
+  }
+  .herocon button {
+    width: 50%;
+    margin-top: 12vh;
+  }
+}

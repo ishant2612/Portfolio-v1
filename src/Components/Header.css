@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+
+.nav {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  padding: 0 3vw;
+  z-index: 2;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: "Squada One", sans-serif;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  background-color: #0f0f0f;
+  transition: top 0.3s;
+}
+
+.nav--hidden {
+  top: -100%;
+  opacity: 0.7; /* hide the header by moving it off the screen */
+}
+
+.navcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 22%;
+  gap: 2vw;
+}
+
+.navcon button {
+  padding: 1.3vh 1vw;
+  border-radius: 20px;
+  border: 1px solid #b52431;
+  background-color: transparent;
+  color: #b52431;
+  font-family: "Squada One", sans-serif;
+  font-size: 2.5vh;
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+.navcon button:hover {
+  background-color: #b52431;
+  color: #0f0f0f;
+}
+
+.direct {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.direct p {
+  position: relative;
+  font-size: 2.5vh;
+  color: #ffffff98;
+  cursor: pointer;
+}
+
+.direct p::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5vh;
+  width: 100%;
+  height: 0.2vh;
+  background-color: white;
+  opacity: 0;
+  transform-origin: left center;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  transform: scaleX(0);
+}
+
+.direct p:hover,
+.direct p.active {
+  /* Added active state */
+  color: white; /* Changed color on hover/active */
+}
+
+.direct p:hover::before,
+.direct p.active::before {
+  /* Added active state */
+  transform: scaleX(1);
+  opacity: 1;
+  background-color: white; /* Changed background color to white on hover/active */
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav {
+    width: 100%;
+    /* background-color: #b52431; */
+    height: 8%;
+  }
+
+  .logo svg {
+    width: 50%;
+    height: 80%;
+  }
+
+  .navcon {
+    display: none;
+  }
+}

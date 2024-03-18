@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  /* padding-top: 20vh; */
+}
+
+.effect {
+  height: 40%;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.repeat-item {
+  font-size: 12.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  p {
+    margin-right: 10vw;
+    -webkit-text-fill-color: transparent;
+    font-family: "Squada One", sans-serif;
+    font-weight: 600;
+    -webkit-text-stroke: 1px #0f0f0f;
+    letter-spacing: 2px;
+  }
+}
+
+.intro {
+  padding: 0 4vw;
+  font-family: "square BT";
+  line-height: 2rem;
+  font-weight: 400;
+}
+.aboutcon {
+  /* background-color: blue; */
+  background: url("../res/bga.png") center/cover no-repeat;
+  height: 100%;
+  width: 100%;
+  padding: 15vh 5vw 0 5vw;
+}
+
+.intro-me {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.content {
+  width: 60%;
+  /* background-color: aqua; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20vh 0;
+}
+
+.head {
+  font-size: 10vh;
+  font-weight: 200;
+  color: white;
+  font-family: "slimjoe";
+  margin-bottom: 4vh;
+  & span {
+    color: red;
+  }
+}
+
+.con {
+  width: 70%;
+  font-size: 1.9vh;
+  letter-spacing: 0.12rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-family: "Square BT";
+  color: #b0b0b0;
+}
+
+@media only screen and (max-width: 412px) {
+
+  .intro{
+    font-size: 1.5vh;
+    line-height: 1rem;
+    
+  }
+  .aboutcon{
+    padding: 10vh 0;
+  }
+  .intro-me {
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    position: relative;
+    & img {
+      width: 50%;
+      height: 50%;
+      /* position: absolute; */
+      margin-bottom: 20vh;
+    }
+  }
+
+  .content{
+    /* background-color: red; */
+    padding: 0;
+    width: 50%;
+
+  }
+
+
+  .head{
+    width: 100%;
+    margin-left: -6vw;
+    font-size: 3rem;
+    margin-top:20vh ;
+  }
+  .con{
+    text-align: start;
+    font-size: 1.3vh;
+    position: absolute;
+    bottom: 1vh;
+    line-height: 1.01rem;
+    width: 90%;
+    left: 5%;
+    padding: 5vh 10vw;
+    color: red;
+    background-color:#161616;
+    border-radius: 20px;
+  }
+}
