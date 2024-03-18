@@ -14,6 +14,8 @@ function Projects() {
   const rtlink = "https://real-time-task-management-website.vercel.app/login";
   const mglink = "https://magma-web-clone.vercel.app/";
   const rblink = "https://rayban-web.vercel.app/";
+  const tslink = "https://tesla-clone-ishant.vercel.app/";
+  const nasalink = "https://submission-area51.vercel.app/";
   const handleIconClick = (link) => {
     window.open(link, "_blank");
   };
@@ -84,7 +86,7 @@ function Projects() {
               </div>
             </div>
             <div className="row3">
-              <div className="p5">
+              <div className="p5" onClick={() => handleIconClick(nasalink)}>
                 <div className="imgp">
                   <img src={nasa} />
                 </div>
@@ -99,7 +101,7 @@ function Projects() {
                   <p>Nasa Space-App</p>
                 </div>
               </div>
-              <div className="p6">
+              <div className="p6" onClick={() => handleIconClick(tslink)}>
                 <div className="imgp">
                   <img src={tesla} />
                 </div>
