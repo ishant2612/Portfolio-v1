@@ -5,6 +5,7 @@ import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
 import { useState, useEffect } from "react";
 import Skills from "./Components/Skills";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 function App() {
   const [scrollPos, setScrollPos] = useState(0);
 
@@ -25,6 +26,7 @@ function App() {
       <About />
       <Projects />
       <Skills />
+      <SpeedInsights />
     </div>
   );
 }
