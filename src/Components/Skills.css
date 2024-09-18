@@ -4,13 +4,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: red; */
 }
 
 .my-skills {
   width: 98%;
   height: 65%;
-  /* background-color: red; */
   border: 2px solid #b0b0b06e;
   border-style: none none solid none;
   display: flex;
@@ -24,16 +22,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: aquamarine; */
   border: 1px solid #b52431;
   border-style: none solid none none;
   text-align: start;
   font-family: "slimjoe";
   font-size: 4.765rem;
   color: #b0b0b06e;
-  & span {
-    color: #b52431;
-  }
+}
+
+.title span {
+  color: #b52431;
 }
 
 .skill-icon {
@@ -42,16 +40,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: red; */
 }
 
 .icons-s {
   width: 95%;
   height: 90%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  grid-template-rows: repeat(2, 1fr); /* 2 rows */
-  gap: 10px; /* Adjust gap between grid items */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
   justify-items: center;
   align-items: center;
 }
@@ -76,7 +73,6 @@
   height: 35%;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   padding: 10vh 0;
 }
 
@@ -95,4 +91,62 @@
   align-items: first baseline;
   color: #b52431;
   justify-content: space-between;
+}
+
+/* Responsive styles */
+
+@media (max-width: 480px) {
+  .my-skills {
+    height: 50%;
+    /* background-color: red; */
+    position: relative;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2rem;
+    position: absolute;
+    top: -20vh;
+    left: 10vw;
+    color: white;
+    font-family: "Squada One", sans-serif;
+    border: none;
+
+    /* background-color: red; */
+  }
+
+  .icons-s {
+    /* position: absolute; */
+    width: 950%;
+    height: 90%;
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: repeat(2, 1fr); */
+    /* gap: 10px; */
+    /* justify-items: center; */
+    /* align-items: center; */
+    /* margin-right: 8vw; */
+  }
+  .html {
+    width: 20vw;
+    height: 10vh;
+
+    background-color: transparent;
+  }
+  .contact {
+    /* background-color: red; */
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .some {
+    width: 90%;
+  }
+
+  .s-icons {
+    margin-top: 10vh;
+    width: 30%;
+  }
 }

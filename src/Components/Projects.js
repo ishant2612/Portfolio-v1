@@ -119,14 +119,8 @@ function Projects() {
           <div className="explore" onClick={() => handleIconClick(gitHubLink)}>
             <p>EXPLORE MORE</p>
             <ArrowCircleRightIcon
-              style={{
-                marginTop: "1vh",
-                fontSize: "2vw",
-                fontWeight: "100",
-                color: "#d9d9d9",
-                backgroundColor: "red",
-                borderRadius: "50%",
-              }}
+              className="arrow"
+
             />
           </div>
         </div>
